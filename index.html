@@ -1,330 +1,845 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Vbandin Medium</title>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#8ED7BF">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" href="dist/style.css">
+    <title>MyMedium - Transformación Digital a la carta</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css">
 </head>
 
-<body class="article-list">
+<body>
+<header id="page-header" class="header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">MyMedium</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Buscar">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="#">Favoritos</a>
+                    </li>
+                    <li class="">
+                        <a href="#">SEO</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Analytics</a>
+                    </li>
+                    <li class="hidden-sm">
+                        <a href="#">Big Data</a>
+                    </li>
+                    <li class="hidden-xs hidden-sm">
+                        <a href="#">Machine Learning</a>
+                    </li>
+                    <li class="hidden-xs hidden-sm hidden-md">
+                        <a href="#">Desarrollo</a>
+                    </li>
+                    <li class="hidden-xs hidden-sm hidden-md">
+                        <a href="#">StartUps</a>
+                    </li>
+                    <li class="hidden-xs hidden-sm hidden-md">
+                        <a href="#">Transformación Digital</a>
+                    </li>
+                    <li>
+                        <a href="#">Ver todas</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-user"></span> Entra/Regístrate
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <section class="articles">
 
-	<header class="web-header">
-    	<nav class="navbar">
-       		<ul class="navbar-list">
-				<li class="navbar-item" id="logo">
-					<a href="#" title="Ir a inicio"><img id="logo" src="./dist/img/FAV.jpg" alt="Logo Vbandin Medium" title="Logo"></a>
-				</li>
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="img-wrapper">
+                            <a href="detail.html"
+                               title="¿Qué es el SEO?">
+                                <picture>
+                                    <source srcset="dist/img/contents/que-es-seo-xs.jpg 375w, dist/img/contents/que-es-seo-sm.jpg 768w"
+                                            media="(min-width: 768px)">
+                                    <source srcset="dist/img/contents/que-es-seo-md.jpg 1024w, dist/img/contents/que-es-seo-@2x.jpg 1536w"
+                                            media="(min-width: 992px)">
+                                    <source srcset="dist/img/contents/que-es-seo-lg.jpg 1200w, dist/img/contents/que-es-seo-@3x.jpg 2048w"
+                                            media="(min-width: 1200px)">
+                                    <img class="image img-responsive" src="dist/img/contents/que-es-seo-lg.jpg"
+                                         alt="¿Qué es el SEO?"
+                                         title="¿Qué es el SEO?">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="¿Qué es el SEO?">
+                                        <h1 class="title">¿Qué es el SEO?</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/FAV.jpg" alt="Víctor Bandín Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/FAV.jpg 1x, dist/img/avatars/FAV@2x.jpg 2x, dist/img/avatars/FAV@3x.jpg 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="1" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="1"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Víctor Bandín</span>,
+                                            <time class="date" datetime="2017-03-06T01:29:40+02:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="06 Mar 2017, 01:29">
+                                                06 Mar 2017,
+                                                01:29
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>Como definición se entiende el <strong>SEO</strong> como:<br> El conjunto de acciones que nos ayudan a mejorar la visibilidad de un sitio web en los resultados de búsqueda de los diferentes buscadores.</p>
+                            <p>El término SEO viene del inglés que hace referencia a <em>Search Engine Optimization</em>. También se lo conoce como <em>Posicionamiento Web en castellano</em>.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-       			<li class="navbar-item" id="web-title">
-					<a href="#" class="title-link" title="Ir a inicio"><h1>Vbandin</h1></a>
-				</li>
-				<li class="navbar-item" id="search">
-            		<input type="text" id="buscador" name="buscador" placeholder="¿Qué estas buscando?" required>
-				</li>
-				<li class="navbar-item">
-					<a href="#marketing" class="navbar-link"><b>Marketing</b></a>
-				</li>
-				<li class="navbar-item">
-					<a href="#digital-analytics" class="navbar-link"><b>Digital Analytics</b></a>
-				</li>
-				<li class="navbar-item">
-					<a href="#transformacion-digital" class="navbar-link"><b>Transformación Digital</b></a>
-				</li>
-				<li class="navbar-item">
-					<a href="#startups" class="navbar-link"><b>StartUps</b></a>
-				</li>
-				<li class="navbar-item" id="log-in-link">
-					<a href="#log-in-out" class="log-in-link"><b>Log In / Log Out</b></a>
-				</li>
-			</ul>
-		</nav>
-    </header>
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="video-wrapper embed-responsive embed-responsive-16by9">
+                            <iframe src="//www.dailymotion.com/embed/video/k6FaKmWQ2bB3MomAaB1" width="665" height="375" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="¡Mola! Mira la evolución de los coches de policía en EE.UU">
+                                        <h1 class="title">¡Mola! Mira la evolución de los coches de policía en EE.UU</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/FAV.jpg" alt="Víctor Bandín Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/FAV.jpg 1x, dist/img/avatars/FAV@2x.jpg 2x, dist/img/avatars/FAV@3x.jpg 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="9" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="9"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Víctor Bandín</span>,
+                                            <time class="date" datetime="2017-04-12T15:20:01-04:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="12 Apr 2017, 15:20">
+                                                12 Apr 2017,
+                                                15:20
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>¡De 1950 en adelante y hasta la actualidad! Entra en este vídeo y no te pierdas la evolución de los coches de policía en Estados Unidos. Te sonarán todos pues los hemos ido viendo siempre en películas.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-	<main class="container">
-		<section class="posts-list">
-			<article class="excerp">	
-							<div class="post-info">
-								<div class="author-photo-box">
-									<img class="author-photo" src="./dist/img/FAV.jpg" alt="vbandin" title="vbandin">
-								</div>
-								<div class="name-and-date">
-									<div class="author-name">
-										<a class="author-link" href="#author-profile">vbandin</a>									
-									</div>
-									<div class="row" class="date">
-										02 feb
-									</div>
-									<div class="row" class="time">
-										- 5 min. read
-									</div>
-								</div>
-							</div>
-							<div class="post-in-list"> <a href="evolucion-del-seo.html" class="excerp-link" title="Leer Post">
-						<header class="excerp-header">
-								<figure class="excerp-photo">
-									<img src="./dist/img/old-road.jpg" height="200" width="100%" width="500" class="excerp-photo" alt="Old Road">
-								</figure>	
-								<h2 class="excerp-title">Evolución del SEO</h2>
-								<h3 class="excerp-subtitle">Los cambios desde 2008 hasta hoy</h3>
-						</header>
-								<body class="excerp-body">
-									<p class="excerp-content">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin arcu a lorem aliquam, vel ultricies tellus ornare. Praesent eleifend euismod est id lacinia. 
-									</p>
-								</body>
-								</a>
-							</div>
-								<footer class="excerp-footer">
-									<div class="read-more">
-										<a href="evolucion-del-seo.html" class="read-more-link">Seguir leyendo...</a>
-									</div>
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="video-wrapper embed-responsive embed-responsive-16by9">
+                            <video preload="none" controls poster="dist/img/contents/the-last-jedi-md.jpg">
+                                <source src="http://movietrailers.apple.com/movies/lucasfilm/star-wars-the-last-jedi/star-wars-the-last-jedi-trailer-1_i320.m4v" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="Star Wars: The last Jedi - Luke Skywalker está de vuelta">
+                                        <h1 class="title">Star Wars: The last Jedi - Luke Skywalker está de vuelta</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/FAV.jpg" alt="Víctor Bandín Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/FAV.jpg 1x, dist/img/avatars/FAV@2x.jpg 2x, dist/img/avatars/FAV@3x.jpg 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="10" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="10"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Víctor Bandín</span>,
+                                            <time class="date" datetime="2017-04-16T12:52:06-04:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="16 Apr 2017, 12:52">
+                                                16 Apr 2017,
+                                                12:52
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>Prevista para ser estrenada el 15 de diciembre de 2017, será escrita y dirigida por Rian Johnson3 y será la octava entrega de la saga Star Wars cronológicamente (de acuerdo a la historia principal), y la octava atendiendo a la fecha de estreno. También será la segunda película de la saga Star Wars en ser producida tras la retirada de George Lucas, quien aun así colaborará en ella como consultor.</p>
 
-									<div class="likes-and-comments">
+                            <p>El director del séptimo episodio, J.J. Abrams, pasará a ser productor ejecutivo, junto con Tom Karnowski.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-										<button class="heart-button" title="Recommend to share this article with your followers and let the author know you liked it" aria-label="Recommend to share this article with your followers and let the author know you liked it">
-											<span class="button-defaultState">
-												<span class="svgIcon svgIcon--heart svgIcon--25px is-flushLeft">
-													<svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25">	
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="img-wrapper">
+                            <a href="detail.html"
+                               title="¿Qué es el SEO?">
+                                <picture>
+                                    <source srcset="dist/img/contents/coffee-xs.jpg 375w, dist/img/contents/coffee-sm.jpg 768w"
+                                            media="(min-width: 768px)">
+                                    <source srcset="dist/img/contents/coffee-md.jpg 1024w, dist/img/contents/coffee-@2x.jpg 1536w"
+                                            media="(min-width: 992px)">
+                                    <source srcset="dist/img/contents/coffee-lg.jpg 1200w, dist/img/contents/coffee-@3x.jpg 2048w"
+                                            media="(min-width: 1200px)">
+                                    <img class="image img-responsive" src="dist/img/contents/coffee-lg.jpg"
+                                         alt="¿Qué es el SEO?"
+                                         title="¿Qué es el SEO?">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="Used Coffee Grounds Can Clean Contaminated Water ">
+                                        <h1 class="title">Used Coffee Grounds Can Clean Contaminated Water </h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/user-placeholder.png" alt="Víctor Bandín Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/user-placeholder.png 1x, dist/img/avatars/user-placeholder@2x.png 2x, dist/img/avatars/user-placeholder@3x.png 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="2" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="2"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Knvul Sheikh</span>,
+                                            <time class="date" datetime="2016-09-22T22:40:06-00:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="22 Sept 2016, 10:40">
+                                                22 Sept 2016, 10:40
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>The earthy aroma of coffee in the morning is great for waking you up in the morning. But
+                                people who make a daily cup of joe generate, and toss, a helping of coffee grounds every
+                                day. Add restaurants and coffee shops into the mix and you can get tons of the brown
+                                dust. Now scientists figured out an innovative way to reduce this waste—and
+                                simultaneously help remove other toxic chemicals from the environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-														<path d="M12.5 21a.492.492 0 	0 1-.327-.122c-.278-.24-.61-.517-.978-.826-2.99-2.5-7.995-6.684-7.995-10.565C3.2 6.462 5.578 4 8.5 4c1.55 0 3 .695 4 1.89a5.21 5.21 0 0 1 4-1.89c2.923 0 5.3 2.462 5.3 5.487 0 3.97-4.923 8.035-7.865 10.464-.42.35-.798.66-1.108.93a.503.503 0 0 1-.327.12zM8.428 4.866c-2.414 0-4.378 2.05-4.378 4.568 0 3.475 5.057 7.704 7.774 9.975.243.2.47.39.676.56.245-.21.52-.43.813-.68 2.856-2.36 7.637-6.31 7.637-9.87 0-2.52-1.964-4.57-4.377-4.57-1.466 0-2.828.76-3.644 2.04-.1.14-.26.23-.43.23-.18 0-.34-.09-.43-.24-.82-1.27-2.18-2.03-3.65-2.03z" fill-rule="evenodd">	
-														</path>
-													</svg>
-												</span>
-											</span>
-											
-											 <!--<span class="button-activeState">
-												<span class="svgIcon svgIcon--heartFilled svgIcon--25px is-flushLeft">
-													<svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25">	<path d="M12.5 21a.492.492 0 0 1-.327-.122c-.278-.24-.61-.517-.978-.826-2.99-2.5-7.995-6.684-7.995-10.565C3.2 6.462 5.578 4 8.5 4c1.55 0 3 .695 4 1.89a5.21 5.21 0 0 1 4-1.89c2.923 0 5.3 2.462 5.3 5.487 0 3.97-4.923 8.035-7.865 10.464-.42.35-.798.66-1.108.93a.503.503 0 0 1-.327.12z" fill-rule="evenodd"></path>
-													</svg>
-												</span>
-											</span>-->
-										</button>
-										
-										<div class="comments">
-											<a class="comments-link" href="file:///C:/Users/seo/Desktop/vbandin_medium/evolucion-del-seo.html#comments">2 comentarios</a>
-										</div>
-									</div>
-						</footer>		
-					</article>
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="img-wrapper">
+                            <a href="detail.html"
+                               title="Let’s Dance: ‘Swan Lake,’ ‘Fire or Ice,’ ‘Ailey II’ This Fall">
+                                <picture>
+                                    <source srcset="dist/img/contents/dance-xs.jpg 375w, dist/img/contents/dance-sm.jpg 768w"
+                                            media="(min-width: 768px)">
+                                    <source srcset="dist/img/contents/dance-md.jpg 1024w, dist/img/contents/dance-@2x.jpg 1536w"
+                                            media="(min-width: 992px)">
+                                    <source srcset="dist/img/contents/dance-lg.jpg 1200w, dist/img/contents/dance-@3x.jpg 2048w"
+                                            media="(min-width: 1200px)">
+                                    <img class="image img-responsive" src="dist/img/contents/dance-lg.jpg"
+                                         alt="Dancers"
+                                         title="Let’s Dance: ‘Swan Lake,’ ‘Fire or Ice,’ ‘Ailey II’ This Fall">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="Let’s Dance: ‘Swan Lake,’ ‘Fire or Ice,’ ‘Ailey II’ This Fall">
+                                        <h1 class="title">Let’s Dance: ‘Swan Lake,’ ‘Fire or Ice,’ ‘Ailey II’ This
+                                            Fall</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/user-two.jpg" alt="Christopher Arnott Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/user-two.jpg 1x, dist/img/avatars/user-two@2x.jpg 2x, dist/img/avatars/user-two@3x.jpg 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="3" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="3"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Christopher Arnott</span>,
+                                            <time class="date" datetime="2016-09-16T12:10:00-00:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="16 Sept 2016, 12:10">
+                                                16 Sept 2016, 12:10
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>The dance scene has changed deeply in just a couple of decades. National touring troupes
+                                are fewer, some local dance companies have been around long enough to become
+                                institutions and many shows on Broadway can be more about dancing than they are about
+                                singing or acting.</p>
+                            <p><strong>"Swan Lake":</strong> The Russian Grand Ballet brings a classic Tchaikovsky
+                                ballet to two venues this month. The three-act ballet is choreographed by Marius Petipa
+                                and Lev Ivanov. The Sept. 21 show at Hartford's Bushnell is sold out, but there are
+                                still tickets for the 7 p.m. performance on Sept. 25 at the Palace Theatre in Stamford.
+                            </p>
+                            <p><strong>"Black Girl — Linguistic Play":</strong> Camille A. Brown & Dancers bring the
+                                Connecticut premiere of "a nuanced spectrum of black womanhood," using a range of
+                                contemporary African-American dance styles, to the Wesleyan Center for the Arts 8 p.m.
+                                Oct. 7. </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-					<article class="excerp">	
-						<div class="post-info">
-							<div class="author-photo-box">
-								<img class="author-photo" src="./dist/img/FAV.jpg" alt="vbandin" title="vbandin">
-							</div>
-								<div class="name-and-date">
-									<div class="author-name">
-										<a class="author-link" href="#author-profile">vbandin</a>
-									</div>
-								<div class="row" class="date">
-										02 feb
-								</div>
-								<div class="row" class="time">
-									- 5 min. read
-								</div>
-							</div>
-						</div>
-						<div class="post-in-list"> <a href="evolucion-del-seo.html" class="excerp-link" title="Leer Post">
-							<header class="excerp-header">
-								<video id="excerp-video" width="100%" width="500" controls>
-									<source src="./dist/video/victor.mp4" type="video/mp4">
-								</video>
-									<h2 class="excerp-title">Evolución del SEO</h2>
-									<h3 class="excerp-subtitle">Los cambios desde 2008 hasta hoy</h3>
-							</header>
-								<body class="excerp-body">
-									<p class="excerp-content">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin arcu a lorem aliquam, vel ultricies tellus ornare. Praesent eleifend euismod est id lacinia. 
-									</p>
-								</body>
-							</div>
-								<footer class="excerp-footer">
-									<div class="read-more">
-										<a href="evolucion-del-seo.html" class="read-more-link">Seguir leyendo...</a>
-							<a/>
-							</div>
-								
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="img-wrapper">
+                            <a href="detail.html"
+                               title="Runnable wants to make developers more productive">
+                                <picture>
+                                    <source srcset="dist/img/contents/development-xs.jpg 375w, dist/img/contents/development-sm.jpg 768w"
+                                            media="(min-width: 768px)">
+                                    <source srcset="dist/img/contents/development-md.jpg 1024w, dist/img/contents/development-@2x.jpg 1536w"
+                                            media="(min-width: 992px)">
+                                    <source srcset="dist/img/contents/development-lg.jpg 1200w, dist/img/contents/development-@3x.jpg 2048w"
+                                            media="(min-width: 1200px)">
+                                    <img class="image img-responsive" src="dist/img/contents/development-lg.jpg"
+                                         alt="Developing"
+                                         title="Runnable wants to make developers more productive">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="Runnable wants to make developers more productive">
+                                        <h1 class="title">Runnable wants to make developers more productive</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/user-three.jpg" alt="Frederic Lardinois Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/user-three.jpg 1x, dist/img/avatars/user-three@2x.jpg 2x, dist/img/avatars/user-three@3x.jpg 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="4" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="4"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Frederic Lardinois</span>,
+                                            <time class="date" datetime="2016-09-11T13:30:00-00:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="11 Sept 2016, 13:30">
+                                                11 Sept 2016, 13:30
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>Back in 2013, Runnable launched with the mission to become the “YouTube of code” that
+                                allowed its users to find and run code snippets on its site. Times have changed, though,
+                                and the well-funded company is going into a slightly different direction today. Runnable
+                                today is a tool for enterprises that want to give their developers the ability to
+                                quickly spin up full-stack environments for every code branch — and starting today, this
+                                service is out of beta and generally available.</p>
+                            <p>“The overwhelming response we got from our CodeSnippets community was that they needed
+                                on-demand environments for their professional dev workflow,” said Runnable CEO and
+                                founder Yash Kumar in today’s announcement. “We’re excited to make this available for
+                                all development teams today.”</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-									<div class="likes-and-comments">
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="img-wrapper">
+                            <a href="detail.html"
+                               title="Discounts Spur More People to Eat Fruit, Veggies">
+                                <picture>
+                                    <source srcset="dist/img/contents/fruits-xs.jpg 375w, dist/img/contents/fruits-sm.jpg 768w"
+                                            media="(min-width: 768px)">
+                                    <source srcset="dist/img/contents/fruits-md.jpg 1024w, dist/img/contents/fruits-@2x.jpg 1536w"
+                                            media="(min-width: 992px)">
+                                    <source srcset="dist/img/contents/fruits-lg.jpg 1200w, dist/img/contents/fruits-@3x.jpg 2048w"
+                                            media="(min-width: 1200px)">
+                                    <img class="image img-responsive" src="dist/img/contents/fruits-lg.jpg"
+                                         alt="Developing"
+                                         title="Discounts Spur More People to Eat Fruit, Veggies">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="Discounts Spur More People to Eat Fruit, Veggies">
+                                        <h1 class="title">Discounts Spur More People to Eat Fruit, Veggies</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/user-four.jpg" alt="Steven Reinberg Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/user-four.jpg 1x, dist/img/avatars/user-four@2x.jpg 2x, dist/img/avatars/user-four@3x.jpg 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="5" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="5"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Steven Reinberg</span>,
+                                            <time class="date" datetime="2016-09-22T22:22:00-00:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="22 Sept 2016, 22:22">
+                                                22 Sept 2016, 22:22
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>Giving low-income Americans discounts on fruits and vegetables while disallowing
+                                sugar-sweetened soda and treat purchases may improve their diets, a new study
+                                suggests.</p>
+                            <p>About one in seven people in the United States participates in the government-funded
+                                Supplemental Nutrition Assistance Program (SNAP), formerly known as the Food Stamp
+                                Program. Because SNAP benefits can't be altered without a change in the law that governs
+                                it, the researchers tested a possible change in benefits with low-income people who
+                                might be eligible for the program.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-										<button class="heart-button" title="Recommend to share this article with your followers and let the author know you liked it" aria-label="Recommend to share this article with your followers and let the author know you liked it">
-											<span class="button-defaultState">
-												<span class="svgIcon svgIcon--heart svgIcon--25px is-flushLeft">
-													<svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25">	
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="img-wrapper">
+                            <a href="detail.html"
+                               title="Discounts Spur More People to Eat Fruit, Veggies">
+                                <picture>
+                                    <source srcset="dist/img/contents/graffiti-xs.jpg 375w, dist/img/contents/graffiti-sm.jpg 768w"
+                                            media="(min-width: 768px)">
+                                    <source srcset="dist/img/contents/graffiti-md.jpg 1024w, dist/img/contents/graffiti-@2x.jpg 1536w"
+                                            media="(min-width: 992px)">
+                                    <source srcset="dist/img/contents/graffiti-lg.jpg 1200w, dist/img/contents/graffiti-@3x.jpg 2048w"
+                                            media="(min-width: 1200px)">
+                                    <img class="image img-responsive" src="dist/img/contents/graffiti-lg.jpg"
+                                         alt="Graffiti"
+                                         title="Urban culture class lets Mercer students learn from a professional graffiti artist">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="Urban culture class lets Mercer students learn from a professional graffiti artist">
+                                        <h1 class="title">Urban culture class lets Mercer students learn from a
+                                            professional graffiti artist</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/FAV.jpg" alt="Kerry Steinhofer Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/FAV.jpg 1x, dist/img/avatars/FAV@2x.jpg 2x, dist/img/avatars/FAV@3x.jpg 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="6" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="6"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Kerry Steinhofer</span>,
+                                            <time class="date" datetime="2016-09-22T22:22:00-00:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="22 Sept 2016, 22:22">
+                                                22 Sept 2016, 22:22
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>Mercer County High School students got the chance to work with professional graffiti
+                                artist Dani Greene Friday at the school.</p>
+                            <p>Teacher Chloe Wilcher leads the new elective class American Urban Culture Studies.</p>
+                            <p>This is the first year for the class. Currently they are studying the urban art of
+                                graffiti and why it’s important.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-														<path d="M12.5 21a.492.492 0 	0 1-.327-.122c-.278-.24-.61-.517-.978-.826-2.99-2.5-7.995-6.684-7.995-10.565C3.2 6.462 5.578 4 8.5 4c1.55 0 3 .695 4 1.89a5.21 5.21 0 0 1 4-1.89c2.923 0 5.3 2.462 5.3 5.487 0 3.97-4.923 8.035-7.865 10.464-.42.35-.798.66-1.108.93a.503.503 0 0 1-.327.12zM8.428 4.866c-2.414 0-4.378 2.05-4.378 4.568 0 3.475 5.057 7.704 7.774 9.975.243.2.47.39.676.56.245-.21.52-.43.813-.68 2.856-2.36 7.637-6.31 7.637-9.87 0-2.52-1.964-4.57-4.377-4.57-1.466 0-2.828.76-3.644 2.04-.1.14-.26.23-.43.23-.18 0-.34-.09-.43-.24-.82-1.27-2.18-2.03-3.65-2.03z" fill-rule="evenodd">	
-														</path>
-													</svg>
-												</span>
-											</span>
-											
-											 <!--<span class="button-activeState">
-												<span class="svgIcon svgIcon--heartFilled svgIcon--25px is-flushLeft">
-													<svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25">	<path d="M12.5 21a.492.492 0 0 1-.327-.122c-.278-.24-.61-.517-.978-.826-2.99-2.5-7.995-6.684-7.995-10.565C3.2 6.462 5.578 4 8.5 4c1.55 0 3 .695 4 1.89a5.21 5.21 0 0 1 4-1.89c2.923 0 5.3 2.462 5.3 5.487 0 3.97-4.923 8.035-7.865 10.464-.42.35-.798.66-1.108.93a.503.503 0 0 1-.327.12z" fill-rule="evenodd"></path>
-													</svg>
-												</span>
-											</span>-->
-										</button>
-										
-										<div class="comments">
-											<a class="comments-link" href="file:///C:/Users/seo/Desktop/vbandin_medium/evolucion-del-seo.html#comments">2 comentarios</a>
-										</div>
-									</div>
-						</footer>		
-					</article>
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="img-wrapper">
+                            <a href="detail.html"
+                               title="What Gives With So Many Hard Scientists Being Hard-Core Endurance Runners?">
+                                <picture>
+                                    <source srcset="dist/img/contents/run-xs.jpg 375w, dist/img/contents/run-sm.jpg 768w"
+                                            media="(min-width: 768px)">
+                                    <source srcset="dist/img/contents/run-md.jpg 1024w, dist/img/contents/run-@2x.jpg 1536w"
+                                            media="(min-width: 992px)">
+                                    <source srcset="dist/img/contents/run-lg.jpg 1200w, dist/img/contents/run-@3x.jpg 2048w"
+                                            media="(min-width: 1200px)">
+                                    <img class="image img-responsive" src="dist/img/contents/run-lg.jpg"
+                                         alt="Running in the beach"
+                                         title="What Gives With So Many Hard Scientists Being Hard-Core Endurance Runners?">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="What Gives With So Many Hard Scientists Being Hard-Core Endurance Runners?">
+                                        <h1 class="title">What Gives With So Many Hard Scientists Being Hard-Core
+                                            Endurance Runners?</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/user-placeholder.png" alt="Sarah Scoles Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/user-placeholder.png 1x, dist/img/avatars/user-placeholder@2x.png 2x, dist/img/avatars/user-placeholder@3x.png 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="7" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="7"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Sarah Scoles</span>,
+                                            <time class="date" datetime="2016-09-13T01:29:06-04:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="16 Apr 2017, 01:29">
+                                                16 Apr 2017,
+                                                01:29
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>Fifty-two hours and three minutes after Brett Maune left the starting line of the 2012
+                                Barkley Marathons, he returned to that same spot and placed his hand on the finish line:
+                                a yellow State Park gate. Briars had shredded his legs. He was dirty and disheveled, his
+                                hydration pack hanging off one shoulder, an empty sport-spout Gatorade bottle clutched
+                                in his right hand, glasses still somehow resting on his nose. He’d slept for just one
+                                hour during the entire race. But he had done it: broken the 55-hour, 42-minute Barkley
+                                course record by more than three hours. He was the first person to finish the race
+                                twice, a win immortalized in the documentary The Barkley Marathons: The Race That Eats
+                                Its Young.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-			<article class="excerp">	
-							<div class="post-info">
-								<div class="author-photo-box">
-									<img class="author-photo" src="./dist/img/FAV.jpg" alt="vbandin" title="vbandin">
-								</div>
-								<div class="name-and-date">
-									<div class="author-name">
-										<a class="author-link" href="#author-profile">vbandin</a>									
-									</div>
-									<div class="row" class="date">
-										02 feb
-									</div>
-									<div class="row" class="time">
-										- 5 min. read
-									</div>
-								</div>
-							</div>
-							<div class="post-in-list"> <a href="evolucion-del-seo.html" class="excerp-link" title="Leer Post">
-						<header class="excerp-header">
-								<figure class="excerp-photo">
-									<img src="./dist/img/old-road.jpg" height="200" width="100%" width="500" class="excerp-photo" alt="Old Road">
-								</figure>	
-								<h2 class="excerp-title">Evolución del SEO</h2>
-								<h3 class="excerp-subtitle">Los cambios desde 2008 hasta hoy</h3>
-						</header>
-								<body class="excerp-body">
-									<p class="excerp-content">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin arcu a lorem aliquam, vel ultricies tellus ornare. Praesent eleifend euismod est id lacinia. 
-									</p>
-								</body>
-								</a>
-							</div>
-								<footer class="excerp-footer">
-									<div class="read-more">
-										<a href="evolucion-del-seo.html" class="read-more-link">Seguir leyendo...</a>
-									</div>
-
-									<div class="likes-and-comments">
-
-										<button class="heart-button" title="Recommend to share this article with your followers and let the author know you liked it" aria-label="Recommend to share this article with your followers and let the author know you liked it">
-											<span class="button-defaultState">
-												<span class="svgIcon svgIcon--heart svgIcon--25px is-flushLeft">
-													<svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25">	
-
-														<path d="M12.5 21a.492.492 0 	0 1-.327-.122c-.278-.24-.61-.517-.978-.826-2.99-2.5-7.995-6.684-7.995-10.565C3.2 6.462 5.578 4 8.5 4c1.55 0 3 .695 4 1.89a5.21 5.21 0 0 1 4-1.89c2.923 0 5.3 2.462 5.3 5.487 0 3.97-4.923 8.035-7.865 10.464-.42.35-.798.66-1.108.93a.503.503 0 0 1-.327.12zM8.428 4.866c-2.414 0-4.378 2.05-4.378 4.568 0 3.475 5.057 7.704 7.774 9.975.243.2.47.39.676.56.245-.21.52-.43.813-.68 2.856-2.36 7.637-6.31 7.637-9.87 0-2.52-1.964-4.57-4.377-4.57-1.466 0-2.828.76-3.644 2.04-.1.14-.26.23-.43.23-.18 0-.34-.09-.43-.24-.82-1.27-2.18-2.03-3.65-2.03z" fill-rule="evenodd">	
-														</path>
-													</svg>
-												</span>
-											</span>
-											
-											 <!--<span class="button-activeState">
-												<span class="svgIcon svgIcon--heartFilled svgIcon--25px is-flushLeft">
-													<svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25">	<path d="M12.5 21a.492.492 0 0 1-.327-.122c-.278-.24-.61-.517-.978-.826-2.99-2.5-7.995-6.684-7.995-10.565C3.2 6.462 5.578 4 8.5 4c1.55 0 3 .695 4 1.89a5.21 5.21 0 0 1 4-1.89c2.923 0 5.3 2.462 5.3 5.487 0 3.97-4.923 8.035-7.865 10.464-.42.35-.798.66-1.108.93a.503.503 0 0 1-.327.12z" fill-rule="evenodd"></path>
-													</svg>
-												</span>
-											</span>-->
-										</button>
-										
-										<div class="comments">
-											<a class="comments-link" href="file:///C:/Users/seo/Desktop/vbandin_medium/evolucion-del-seo.html#comments">2 comentarios</a>
-										</div>
-									</div>
-						</footer>		
-					</article>
-
-					<article class="excerp">	
-							<div class="post-info">
-								<div class="author-photo-box">
-									<img class="author-photo" src="./dist/img/FAV.jpg" alt="vbandin" title="vbandin">
-								</div>
-								<div class="name-and-date">
-									<div class="author-name">
-										<a class="author-link" href="#author-profile">vbandin</a>
-									</div>
-									<div class="row" class="date">
-										02 feb
-									</div>
-									<div class="row" class="time">
-										- 5 min. read
-									</div>
-								</div>
-							</div>
-							<div class="post-in-list"> <a href="evolucion-del-seo.html" class="excerp-link" title="Leer Post">
-						<header class="excerp-header">
-								<figure class="excerp-photo">
-									<img src="./dist/img/old-road.jpg" height="200" width="100%" width="500" class="excerp-photo" alt="Old Road">
-								</figure>	
-								<h2 class="excerp-title">Evolución del SEO</h2>
-								<h3 class="excerp-subtitle">Los cambios desde 2008 hasta hoy</h3>
-						</header>
-								<body class="excerp-body">
-									<p class="excerp-content">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin arcu a lorem aliquam, vel ultricies tellus ornare. Praesent eleifend euismod est id lacinia. 
-									</p>
-								</body>
-								</a>
-							</div>
-								<footer class="excerp-footer">
-									<div class="read-more">
-										<a href="evolucion-del-seo.html" class="read-more-link">Seguir leyendo...</a>
-									</div>
-
-									<div class="likes-and-comments">
-
-										<button class="heart-button" title="Recommend to share this article with your followers and let the author know you liked it" aria-label="Recommend to share this article with your followers and let the author know you liked it">
-											<span class="button-defaultState">
-												<span class="svgIcon svgIcon--heart svgIcon--25px is-flushLeft">
-													<svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25">	
-
-														<path d="M12.5 21a.492.492 0 	0 1-.327-.122c-.278-.24-.61-.517-.978-.826-2.99-2.5-7.995-6.684-7.995-10.565C3.2 6.462 5.578 4 8.5 4c1.55 0 3 .695 4 1.89a5.21 5.21 0 0 1 4-1.89c2.923 0 5.3 2.462 5.3 5.487 0 3.97-4.923 8.035-7.865 10.464-.42.35-.798.66-1.108.93a.503.503 0 0 1-.327.12zM8.428 4.866c-2.414 0-4.378 2.05-4.378 4.568 0 3.475 5.057 7.704 7.774 9.975.243.2.47.39.676.56.245-.21.52-.43.813-.68 2.856-2.36 7.637-6.31 7.637-9.87 0-2.52-1.964-4.57-4.377-4.57-1.466 0-2.828.76-3.644 2.04-.1.14-.26.23-.43.23-.18 0-.34-.09-.43-.24-.82-1.27-2.18-2.03-3.65-2.03z" fill-rule="evenodd">	
-														</path>
-													</svg>
-												</span>
-											</span>
-											
-											 <!--<span class="button-activeState">
-												<span class="svgIcon svgIcon--heartFilled svgIcon--25px is-flushLeft">
-													<svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25">	<path d="M12.5 21a.492.492 0 0 1-.327-.122c-.278-.24-.61-.517-.978-.826-2.99-2.5-7.995-6.684-7.995-10.565C3.2 6.462 5.578 4 8.5 4c1.55 0 3 .695 4 1.89a5.21 5.21 0 0 1 4-1.89c2.923 0 5.3 2.462 5.3 5.487 0 3.97-4.923 8.035-7.865 10.464-.42.35-.798.66-1.108.93a.503.503 0 0 1-.327.12z" fill-rule="evenodd"></path>
-													</svg>
-												</span>
-											</span>-->
-										</button>
-										
-										<div class="comments">
-											<a class="comments-link" href="file:///C:/Users/seo/Desktop/vbandin_medium/evolucion-del-seo.html#comments">2 comentarios</a>
-										</div>
-									</div>
-								</footer>		
-						</article>
-			<div class="pager">
-				<div class="sorter">
-					<ul class="pagination">
-						<li id="pagination_previous_bottom" class="disabled pagination_previous"><strong> <span> <i class="icon-chevron-left"></i> <b>Anterior</b> </span></strong></li>
-						<li class="active current"><strong> <span> <span>1</span> </span></strong></li><li><strong> <a href="file:///C:/Users/seo/Desktop/vbandin_medium/index.html?p=2"> <span>2</span> </a></strong></li><li><strong> <a href="file:///C:/Users/seo/Desktop/vbandin_medium/index.html?p=3"> <span>3</span> </a></strong></li>
-						<li class="truncate"><strong> <span> <span>...</span> </span></strong></li><li><strong> <a href="file:///C:/Users/seo/Desktop/vbandin_medium/index.html?p=8"> <span>8</span> </a></strong></li>
-						<li id="pagination_next_bottom" class="pagination_next"><strong> <a href="file:///C:/Users/seo/Desktop/vbandin_medium/index.html?p=2"> <b>Siguiente</b> <i class="icon-chevron-right"></i> </a></strong></li>
-					</ul>
-				</div>
-			</div>																									
-		</main>
-
-		<footer class="footer">
-
-			<div id="footer-info">
-			<b>vbandin &copy; 2016 KeepCoding.io</b>
-			</div>
-
-			<div id="back-to-the-header">
-				<a href="#"><b>Ir a inicio</b></a>
-			</div>
-		</footer>
-	</body>
+            <article class="article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xs-p-0">
+                        <div class="img-wrapper">
+                            <a href="detail.html"
+                               title="Machine-stitched: How online personal shoppers are beginning to offer in-store style experiences">
+                                <picture>
+                                    <source srcset="dist/img/contents/shop-xs.jpg 375w, dist/img/contents/shop-sm.jpg 768w"
+                                            media="(min-width: 768px)">
+                                    <source srcset="dist/img/contents/shop-md.jpg 1024w, dist/img/contents/shop-@2x.jpg 1536w"
+                                            media="(min-width: 992px)">
+                                    <source srcset="dist/img/contents/shop-lg.jpg 1200w, dist/img/contents/shop-@3x.jpg 2048w"
+                                            media="(min-width: 1200px)">
+                                    <img class="image img-responsive" src="dist/img/contents/shop-lg.jpg"
+                                         alt="Running in the beach"
+                                         title="Machine-stitched: How online personal shoppers are beginning to offer in-store style experiences">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <header class="header">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="detail.html"
+                                       title="Machine-stitched: How online personal shoppers are beginning to offer in-store style experiences">
+                                        <h1 class="title">Machine-stitched: How online personal shoppers are beginning
+                                            to offer in-store style experiences</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="dist/img/avatars/FAV.jpg" alt="Víctor Bandín Avatar"
+                                             class="img-circle author-avatar"
+                                             srcset="dist/img/avatars/FAV.jpg 1x, dist/img/avatars/FAV@2x.jpg 2x, dist/img/avatars/FAV@3x.jpg 3x">
+                                        <div class="actions pull-right">
+                                            <button class="btn btn-default like-button" data-article="8" disabled
+                                                    data-toggle="tooltip" data-placement="bottom" title="¡Me gusta!">
+                                                <span class="fa fa-heart"></span>
+                                                <span class="fa fa-heart-o"></span>
+                                                <span class="fa fa-circle-o-notch fa-spin"></span>
+                                            </button>
+                                            <a href="detail.html#comments" class="btn btn-default comments-count"
+                                               data-article="8"
+                                               data-toggle="tooltip" data-placement="bottom" title="Leer los 45 comentarios">
+                                                <span class="fa fa-comments"></span>
+                                                <span class="count">45</span>
+                                            </a>
+                                        </div>
+                                        <div class="metadata">
+                                            <span class="author" rel="author">Víctor Bandín</span>,
+                                            <time class="date" datetime="2016-09-13T01:29:06-04:00"
+                                                  data-toggle="tooltip" data-placement="bottom"
+                                                  title="12 Sept 2016, 01:29">
+                                                12 Sept 2016,
+                                                01:29
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>The business of fashion is all about making choices. Designers dictate (or anticipate,
+                                depending your view) trends, and customers are expected to select from the mass of
+                                options available to them. But progress in machine learning means that more of those
+                                choices can now be made by software, and companies are taking advantage.</p>
+                            <p>On the customer side, machine learning and natural language processing techniques can
+                                help online shopping experiences feel as personal and human as shopping in a well-run
+                                retail store.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+        </section>
+    </div>
+</main>
+<nav class="page-pagination">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="pager">
+                    <li class="previous">
+                        <a href="#">
+                            <span class="fa fa-arrow-left"></span>
+                            Posts anteriores
+                        </a>
+                    </li>
+                    <li class="next">
+                        <a href="#">
+                            Ver siguientes
+                            <span class="fa fa-arrow-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <p>MyMedium @ All rights reserved</p>
+            </div>
+            <div class="col-xs-12 text-center">
+                <a href="#page-header" class="btn btn-default go-up" title="Go to page's top">
+                    <span class="fa fa-arrow-up"></span>
+                    Ir arriba
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="dist/js/app.js"></script>
+</body>
 
 </html>
